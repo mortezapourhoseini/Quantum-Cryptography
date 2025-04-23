@@ -40,16 +40,19 @@ This repository simulates the **BB84 Quantum Key Distribution (QKD)** protocol, 
 ## Usage
 
 ### Basic Simulation (No Eavesdropping)
+
 ```python
 python main.py --key_length 100
 ```
 
 ### Simulate Eavesdropping
+
 ```python
 python main.py --key_length 100 --eve_present
 ```
 
 ### Encrypt/Decrypt a Message
+
 ```python
 python main.py --message "Hello Quantum World!" --key_length 50
 ```
@@ -57,6 +60,7 @@ python main.py --message "Hello Quantum World!" --key_length 50
 ### Run on IBM Quantum Hardware
 1. Add your IBM Quantum API token to `config.py`.
 2. Execute:
+   
    ```python
    python main.py --quantum_hardware ibmq_quito
    ```
